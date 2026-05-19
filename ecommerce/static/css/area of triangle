@@ -1,0 +1,4 @@
+def demo (r):
+    area=24/7*r*r
+    print("area of circle",area)
+demo(r=7)

@@ -1,0 +1,24 @@
+{% extends 'Main.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-6">
+        <img class="thumbnail" src="{{product.imageURL}}" style="width: 100%; height: auto;">
+    </div>
+
+    <div class="col-lg-6">
+        <div class="box-element">
+            <a  class="btn btn-outline-dark" href="{% url 'Store' %}"><--- Back to Store</a>
+            <hr>
+            <h3>{{product.name}}</h3>
+            <hr>
+            <h4>Price: ${{product.price|floatformat:2}}</h4>
+            <p><strong>Description:</strong></p>
+            
+            <hr>
+            <button data-product="{{product.id}}" data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+        </div>
+    </div>
+</div>
+{% endblock content %}

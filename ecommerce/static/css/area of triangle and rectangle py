@@ -1,0 +1,8 @@
+def demo(l,b,h):
+    result=1
+    area=l*b
+    area=1/2*h*b
+    print("area of rectangle",area)
+    print("area of triangle" area)
+    return result
+demo(l=5,b=3,h=7)
